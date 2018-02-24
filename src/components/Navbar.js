@@ -9,9 +9,9 @@ const Navbar = () => (
     <div className="container">
       <div className="navbar-brand">
         <Link to="/" className="navbar-item">
-          <figure className="image">
-            <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
-          </figure>
+          {/* <figure className="image"> */}
+          Company Title here
+          {/* </figure> */}
         </Link>
       </div>
       <div className="navbar-start">
@@ -21,13 +21,16 @@ const Navbar = () => (
         <Link className="navbar-item" to="/products">
           Products
         </Link>
+        <Link className="navbar-item" to="/blog-posts">
+          Blog Posts
+        </Link>
       </div>
       <div className="navbar-end">
-        <a className="navbar-item" href="https://github.com/AustinGreen/gatsby-netlify-cms-boilerplate" target="_blank" rel="noopener noreferrer">
-          <span className="icon">
-            <img src={github} alt="Github" />
-          </span>
-        </a>
+        {/* <a className="navbar-item" href="https://github.com/AustinGreen/gatsby-netlify-cms-boilerplate" target="_blank" rel="noopener noreferrer"> */}
+        {/* <span className="icon"> */}
+        {/* <img src={github} alt="Github" /> */}
+        {/* </span> */}
+        {/* </a> */}
       </div>
     </div>
   </nav>
