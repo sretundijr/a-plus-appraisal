@@ -4,7 +4,6 @@ import Content, { HTMLContent } from '../components/Content';
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
-  console.log(PageContent);
   return (
     <section className="section section--gradient">
       <div className="container">

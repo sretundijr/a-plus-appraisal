@@ -47,7 +47,7 @@ export default class BlogPosts extends React.Component {
 }
 
 export const pageQuery = graphql`
-  query IndexQuery {
+  query BlogPostsQuery {
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
