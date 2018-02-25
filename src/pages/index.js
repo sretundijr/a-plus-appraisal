@@ -5,6 +5,7 @@ import graphql from "graphql";
 
 import Testimonials from '../components/Testimonials';
 import Footer from '../components/footer';
+import ContactForm from '../components/contact-form';
 
 export default class IndexPage extends React.Component {
 
@@ -79,6 +80,18 @@ export default class IndexPage extends React.Component {
           </div>
         </div>
 
+        <div className="columns">
+          <div
+            className='column is-half is-offset-3'
+            style={{
+              marginTop: '50px',
+              marginBottom: '50px',
+            }}
+          >
+            <ContactForm />
+          </div>
+        </div>
+
         <Footer />
       </section>
     );
@@ -88,19 +101,19 @@ export default class IndexPage extends React.Component {
 // TODO rework this query if possible
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark {
-      edges {
-        node {
-          id
+          allMarkdownRemark {
+        edges {
+          node {
+        id
           frontmatter {
-            testimonials {
-              author
-              quote
-            }
-          }
-        }
+          testimonials {
+        author
+        quote
       }
-    } 
+    }
   }
+}
+} 
+}
 `;
 
