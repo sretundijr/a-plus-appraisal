@@ -5,7 +5,7 @@ const footer = () => {
     <footer
       className="footer"
       style={{
-        marginBottom: '-50px',
+        margin: '0 -50vw -50px -50vw',
       }}
     >
       <div className="container">
