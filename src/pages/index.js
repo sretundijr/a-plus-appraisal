@@ -4,6 +4,7 @@ import Script from "react-load-script";
 import graphql from "graphql";
 
 import Testimonials from '../components/Testimonials';
+import Footer from '../components/footer';
 
 export default class IndexPage extends React.Component {
 
@@ -45,6 +46,11 @@ export default class IndexPage extends React.Component {
           large image here
         </div>
 
+        <div>
+          welcome blurb
+        </div>
+
+        {/* testimonials */}
         <div
           className="hero is-light is-bold"
           style={{
@@ -64,7 +70,6 @@ export default class IndexPage extends React.Component {
             <div
               className="column"
               style={{
-                border: 'solid black 2px',
                 height: 'auto',
               }}
             >
@@ -73,6 +78,8 @@ export default class IndexPage extends React.Component {
             </div>
           </div>
         </div>
+
+        <Footer />
       </section>
     );
   }
