@@ -1,10 +1,15 @@
 import React from 'react';
 
-export const footer = () => {
+const footer = () => {
   return (
-    <footer class="footer">
-      <div class="container">
-        <div class="content has-text-centered">
+    <footer
+      className="footer"
+      style={{
+        marginBottom: '-50px',
+      }}
+    >
+      <div className="container">
+        <div className="content has-text-centered">
           <p>Hello footer</p>
         </div>
       </div>
