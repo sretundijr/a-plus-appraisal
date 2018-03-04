@@ -5,7 +5,7 @@ import graphql from "graphql";
 
 import Testimonials from '../components/Testimonials';
 import Footer from '../components/footer';
-import ContactForm from '../components/contact-form';
+import QuoteForm from '../components/quote-form';
 
 export default class IndexPage extends React.Component {
 
@@ -53,7 +53,7 @@ export default class IndexPage extends React.Component {
 
         {/* testimonials */}
         <div
-          className="hero is-light is-bold"
+          className="hero is-bold"
           style={{
             marginTop: '50px',
             height: 'auto',
@@ -61,12 +61,13 @@ export default class IndexPage extends React.Component {
         >
           <div className="hero-body container columns">
             <div className="column has-text-centered">
-              <h1 className="title">
+              <h1 className="is-size-3 has-text-weight-bold">
                 Testimonials
                 </h1>
-              <h2 className="subtitle">
-                We provide and excellent client experience
-                </h2>
+              <h2 className="is-size-5">
+                We provide an excellent client experience
+              </h2>
+              <p className="content is-size-5">Here's what they have to say about us</p>
             </div>
             <div
               className="column"
@@ -88,7 +89,8 @@ export default class IndexPage extends React.Component {
               marginBottom: '50px',
             }}
           >
-            <ContactForm />
+            <h3 className="is-size-3 has-text-weight-bold">Get A Quote</h3>
+            <QuoteForm />
           </div>
         </div>
 

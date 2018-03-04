@@ -1,6 +1,6 @@
 import React from 'react';
 
-const contactForm = () => {
+const QuoteForm = () => {
   return (
     <div>
       <div className="field">
@@ -50,7 +50,7 @@ const contactForm = () => {
       <div className="field">
         <label className="label">Additonal Notes or Considerations</label>
         <div className="control">
-          <textarea className="textarea" placeholder="Textarea"></textarea>
+          <textarea className="textarea"></textarea>
         </div>
         <p>
           Anything else useful including whether or not the property is leased, how many tenants are at the property and the use in which you need the appraisal for
@@ -63,5 +63,5 @@ const contactForm = () => {
   );
 }
 
-export default contactForm;
+export default QuoteForm;
 
